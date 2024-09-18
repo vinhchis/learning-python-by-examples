@@ -1,0 +1,4 @@
+squares_generator = (x ** 2 for x in range(10))
+
+for square in squares_generator:
+    print(square)
