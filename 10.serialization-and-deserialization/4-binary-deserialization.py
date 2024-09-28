@@ -2,7 +2,7 @@ import pickle
  
 # Sample serialized data in JSON format . Use ''' to create a paragraph
 serialized_data = {}
-with open("data.bin", "rb") as file: 
+with open("./data/document.bin", "rb") as file: 
     serialized_data = file.read() 
  
 

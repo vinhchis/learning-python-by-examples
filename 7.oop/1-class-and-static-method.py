@@ -7,8 +7,8 @@ class Rectangle:
         return self.width * self.height 
  
     @classmethod 
-    def create_square(cls, side): 
-        return cls(side, side) 
+    def create_square(cls, side): # cls is this class-level
+        return cls(side, side) # return Rectangle(side, side)
  
     @staticmethod 
     def is_large_rectangle(rect): 

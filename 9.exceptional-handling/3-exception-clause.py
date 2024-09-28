@@ -14,14 +14,9 @@ def read_and_divide(filename):
         print("Error: Invalid data in the file. Please ensure numeric values.") 
     except Exception as e: 
         print(f"An error occurred: {e}") 
- 
-# Main program 
-script_dir = os.path.dirname(os.path.abspath(__file__)) # get absolute path
-print(f"Script directory: {script_dir}") 
-# os.chdir(script_dir)  # change path working directory
 
 file_name = input("Enter the name of the file: ") 
-# TODO: modify relative path file
+
 result = read_and_divide(file_name) 
 if result is not None: 
     print("Result:", result) 

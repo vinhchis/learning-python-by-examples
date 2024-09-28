@@ -5,8 +5,11 @@ def template_func(func):
         print('End')
     return wrapper
 
-@template_func
+@template_func # use @ notation for a decorator
 def greeting():
     print('Hello')
 
 greeting()
+# Begin
+# Hello
+# End  

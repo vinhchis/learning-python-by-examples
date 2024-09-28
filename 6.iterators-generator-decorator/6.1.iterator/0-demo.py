@@ -5,9 +5,9 @@ print(next(mi))
 print(next(mi))
 print(next(mi))
 
-print(list(mi))
+print(type(mi))
 # 1
 # 2
 # 4
 # 5
-# [6]
+# <class 'tuple_iterator'>

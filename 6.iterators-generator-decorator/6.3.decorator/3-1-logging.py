@@ -1,7 +1,7 @@
 # log information about function calls, arguments, and results without cluttering the actual function code
 def log_function_call(func):
     def wrapper(*args, **kwargs):
-        print(f"Calling {func.__name__} with args: {args}, kwargs: {kwargs}")
+        print(f"Calling {func.__name__}() with args: {args}, kwargs: {kwargs}")
         result = func(*args, **kwargs)
         
         # Fixed the print statement

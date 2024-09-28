@@ -1,14 +1,11 @@
 # use logging instead of print() to save and check in runtime
 import logging
 
-# Configure logging
-# logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s',
-#                     handlers=[logging.StreamHandler(), logging.FileHandler('app.log')])
-
-logging.basicConfig(level=logging.DEBUG, 
-                    format='%(asctime)s - %(levelname)s - %(message)s',
-                    filename='app.log',
-                    filemode='w'
+logging.basicConfig(
+    level=logging.DEBUG, 
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    filename='app.log',
+    filemode='w'
 )
 
 def divide(a, b):

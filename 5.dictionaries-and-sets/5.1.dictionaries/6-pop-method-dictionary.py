@@ -10,7 +10,7 @@ student_scores = {
 luis_score = student_scores.pop("Luis")
 
 # Removing and getting the value for "Diego" (with default)
-diego_score = student_scores.pop("Diego", 0)
+diego_score = student_scores.pop("Diego",0)
 
 # Printing the removed values and the updated #dictionary
 print("Luis's score:", luis_score)

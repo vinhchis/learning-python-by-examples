@@ -2,7 +2,12 @@ from pymongo import MongoClient
 # allow display (Dict) as same as mongo pretty() (JSON) 
 import pprint
 
-client = MongoClient('localhost',27017)
+DB_CONFIG = {
+    'host' : 'localhost',
+    'port' : 27017
+}
+
+client = MongoClient(**DB_CONFIG)
 db = client['library']
 library_details = db['library_details']
 
@@ -23,12 +28,16 @@ def display(dicts):
     for item in dicts:
         pprint.pprint(item)
 
+# 0 . insert
+# insert()
+
+
 # 1. Find one
 # pprint.pprint(library_details.find_one())
 
 # 2. find all
 dicts = library_details.find({})
-# display(dicts)
+display(dicts)
 
 # 3. Filter
 # 3.1. 
@@ -43,4 +52,4 @@ dicts = library_details.find({'book_name': {'$regex': regex}})
 
 # 3.3
 dicts = library_details.find({'volume': {'$gt': 2}})
-display(dicts)
+# display(dicts)

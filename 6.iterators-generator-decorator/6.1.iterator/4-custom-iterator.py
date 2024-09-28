@@ -17,4 +17,4 @@ for value in my_iterable:
     print(value, end=', ')
 # 10, 20, 30, 
 
-print(my_iterable.data)
+print('\n',my_iterable.data)

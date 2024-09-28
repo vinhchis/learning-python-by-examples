@@ -1,4 +1,4 @@
-#Decorator to Calculate execution time of a function
+# Decorator to Calculate execution time of a function
 import time
 def measure_time(func):
     def wrapper(*args, **kwargs):

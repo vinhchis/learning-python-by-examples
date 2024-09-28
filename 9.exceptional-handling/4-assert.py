@@ -6,4 +6,5 @@ result = divide(10, 2)  # This is valid
 print(result) 
  
 result = divide(10, 0)  # This will raise an AssertionError 
-print(result)
+print(result) 
+# AssertionError: Cannot divide by zero
